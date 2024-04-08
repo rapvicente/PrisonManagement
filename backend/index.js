@@ -8,6 +8,9 @@ app.use(express.json());
 const prisonerRoute = require('./routes/prisonerRoute')
 app.use('/prisoner', prisonerRoute)
 
+const guardRoute = require('./routes/guardRoute')
+app.use('/guard', guardRoute)
+
 
 app.listen(port_number, () => {
     console.log(`server is running on http://localhost:${port_number}`)
